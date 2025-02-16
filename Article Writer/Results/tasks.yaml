@@ -1,0 +1,29 @@
+retrieve_task:
+  description: >
+    Retrieve relevant articles and blog posts about the specified {topic}.
+  expected_output: >
+    A curated list of articles and blog posts related to the {topic}.
+  agent: retrieve
+
+website_scraper_task:
+  description: >
+    Extract key content and insights from the retrieved {topic} articles and blog posts.
+  expected_output: >
+    A structured list of relevant information extracted from the context of the retrieved {topic} articles and blog posts.
+  agent: website_scraper
+
+summary_writer_task:
+  description: >
+    Create a concise and well-structured summary that highlights the main points from the extracted information.
+  expected_output: >
+    A clear and organized summary that captures the essential insights from the extracted content.
+    Formatted in Markdown without using '```'.
+  agent: summary_writer
+
+file_generator_task:
+  description: >
+    Generate a comprehensive article with all the necessary information presented in bullet points.
+    Save the file as articles/{topic}.md.
+  expected_output: >
+    A polished, fully-fledged article with the extracted insights in bullet points, saved as articles/{topic}.md.
+  agent: file_generator
