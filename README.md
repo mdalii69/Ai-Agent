@@ -1,2 +1,2 @@
 # Ai-Agent
-This is a AI Agent which extracts articles and blogs and then scrape relevant details in a file 
+AI Agents which scrape relevant details from a file, transcripts and draft mails based on these details. 
